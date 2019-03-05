@@ -16,6 +16,8 @@ const browserSync = BrowserSync.create();
 const hugoBin = 'hugo';
 const defaultArgs = ["-d", "../dist", "-s", "site"];
 
+console.log(process.env);
+
 if (process.env.DEBUG) {
   defaultArgs.unshift("--debug")
 }
